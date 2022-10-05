@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body mx-auto py-4 nav-desk ">
+      <div class="container-fluid ajuste-espacamento">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand pb-2 pt-0" href="#"><img src="images/logo.svg" alt="Logo Sneakers"></a>
+
+        <div class="offcanvas offcanvas-start w-75 " tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 w-50">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img class="nav-item icon-cart" src="images/icon-cart.svg" alt="icone de carrinho de compras" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="modalBuy()">
+          <span class="top-0 start-100 translate-middle badge rounded-pill cor-notificacao" id="notificacao">
+
+            <span class="visually-hidden"></span>
+          </span>
+        </div>
+        <div>
+          <img class="person" src="images/image-avatar.png" alt="foto de perfil de usuário">
+        </div>
+    </nav>
+  </header>
+
+
+  <main class="cont-desk">
+
+
+    <div class="product">
+      <div id="bigImg" class=" formas-das-bordas">
+      <img class=" w-75 formas-das-bordas" src="images/image-product-1.jpg" alt="">
+    </div>
+      <ul class="pagination pagination-lg mt-4 w-75 align-items-center  ">
+        <li class="page-item active mx-2 w-50  " aria-current="page">
+
+          <img class="w-100 formas-das-bordas bordas-thumbs " src="images/image-product-1-thumbnail.jpg" alt="imagem pequena de tênis" id="thumb1">
+
+        </li>
+        <li class="page-item mx-2 w-50">
+          <img class="w-100 formas-das-bordas bordas-thumbs " src="images/image-product-2-thumbnail.jpg" alt="imagem pequena de tênis" id="thumb2">
+        </li>
+        <li class="page-item mx-2 w-50">
+          <img class="w-100 rounded formas-das-bordas bordas-thumbs " src="images/image-product-3-thumbnail.jpg" alt="imagem pequena de tênis" id="thumb3">
+        </li>
+
+        <li class="page-item mx-2 w-50">
+          <img class="w-100 formas-das-bordas bordas-thumbs" src="images/image-product-4-thumbnail.jpg" alt="imagem pequena de tênis" id="thumb4">
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!--carrosel mobile-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/image-product-1.jpg" class="d-block w-100" alt="imagem pequena do tênis">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image-product-2.jpg" class="d-block w-100" alt="imagem pequena do tênis">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image-product-3.jpg" class="d-block w-100" alt="imagem pequena do tênis">
+        </div>
+        <div class="carousel-item">
+          <img src="images/image-product-4.jpg" class="d-block w-100" alt="imagem pequena do tênis">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <section class="content p-4 align-items-center ">
+      <h2 class="fw-bold subtitulo-cor-especial text-uppercase">Sneaker Company</h2>
+      <h1 class="fw-bold">Fall Limited Edition Sneakers</h1>
+      <p class="cor-especial-paragrafo">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole,
+        they’ll withstand everything the weather can offer.</p>
+
+      <div class="price d-flex justify-content-between">
+        <h3 class="d-flex gap-3 fw-bold price " data-price="125.00">$125.00<span class="badge discount">50%</span></h3>
+        <p class="text-decoration-line-through color-old-price">$250.00</p>
+      </div>
+      <div class="desk">
+      <div class="interactive-buttons d-flex bg-light justify-content-between formas-das-bordas py-3 px-5 w-100 my-4">
+        <button type="button" id="del" class="border-0 bg-light"><img src="images/icon-minus.svg " alt=""></button>
+        <div id="qtd" class="fw-bold">0</div>
+        <button type="button" id="add" class="border-0 bg-light"><img src="images/icon-plus.svg " alt=""></button>
+
+      </div>
+      <button type="button" onclick="buy()"
+        class="cor-especial-botao cor-notificacao py-3 px-5 w-100 rounded border-0 d-flex justify-content-center gap-3 align-items-center"
+        id="add-card">
+        <img src="images/icon-cart button.svg" alt="">
+        Add to cart
+      </button>
+    </div>
+    </section>
+  </main>
+
+
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <div class=" d-flex text-secondary align-items-center justify-content-center ">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" class="w-25 formas-das-bordas thumbModal">
+            <p id="dadosModal" class="p-3"></p>
+            <img src="images/icon-delete.svg" alt="" class="del thumbModalDel" onclick="dump()">
+          </div>
+
+        </div>
+        <div class="modal-footer justify-content-center border-0">
+
+          <button type="button" class="cor-especial-botao  cor-notificacao py-3 px-5 w-100 rounded border-0 fw-bold"
+            id="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/zabella-12" target="_blank">Isabella Castro &#10084;</a>.
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

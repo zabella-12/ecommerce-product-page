@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+ --orange: hsl(26, 100%, 55%);
+ --paleOrange: hsl(25, 100%, 94%);
+ --veryVarkBlue: hsl(220, 13%, 13%);
+ --darkGrayishBlue: hsl(219, 9%, 45%);
+ --grayishBlue: hsl(220, 14%, 75%);
+ --lightGrayishBlue: hsl(223, 64%, 98%);
+}
+
+.formas-das-bordas {
+
+    border-radius: 10px;
+
+}
+
+.cor-especial-paragrafo {
+    color: var(--darkGrayishBlue);
+    opacity: 0.9;
+   
+}
+
+.cor-especial-botao {
+    color: var(--lightGrayishBlue) ;
+}
+
+.subtitulo-cor-especial {
+    color: var(--orange);
+    font-size: 15px;
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.person {
+    width: 50px;
+}
+
+.person:hover {
+    cursor: pointer;
+}
+
+.cor-notificacao {
+    background-color: var(--orange);
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+
+.color-old-price {
+    color: var(--grayishBlue);
+    font-weight: 500;
+}
+
+.discount {
+    background-color: var(--paleOrange);
+    color: var(--orange) !important;
+    
+
+}
+
+.bordas-thumbs:hover {
+    border: 3px solid var(--orange);
+    opacity: 0.5;
+
+}
+
+.del {
+    height: 20px;
+    width: 16px;
+}
+
+.del:hover {
+    cursor: pointer;
+}
+
+.checkout:hover{
+    cursor: pointer;
+    }
+
+
+/*responsivo desk*/
+@media only screen  and (min-width: 800px) {
+.cont-desk {
+    margin: auto;
+}
+
+.ajuste-espacamento {
+    gap:50px;
+}
+
+ .nav-desk {
+    width: 75%;
+    border-bottom: 1px solid var(--grayishBlue);
+    margin-bottom: 100px;
+ }
+
+ #carouselExampleFade {
+    display: none !important;
+ }
+
+.cont-desk {
+    display: flex;
+    width: 60% ;
+    align-items: center;
+ }
+
+.desk {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.desk:hover {
+    cursor: pointer;
+}
+
+ .price:nth-child(4) {
+    flex-direction: column;
+ }
+
+}
+
+/*responsivo mobile*/
+@media only screen  and (max-width: 600px) {
+nav ul li {
+    font-weight: bold;
+}
+
+.product {
+    display: none;
+}
+
+}
