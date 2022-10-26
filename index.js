@@ -89,17 +89,17 @@ let thum04 = document.getElementById('thumb4')
 let fullImg = document.getElementById('bigImg')
 
 thum01.addEventListener('click', function(){
-    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="https://zabella-12.github.io/ecommerce-product-page/images/image-product-1.jpg"></img>` ;
+    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="https://zabella-12.github.io/ecommerce-product-page/images/image-product-1.jpg">` ;
 })
 
 thum02.addEventListener('click', function(){
-    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="/Images/image-product-2.jpg"></img>` ;
+    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="https://zabella-12.github.io/ecommerce-product-page/images/image-product-2.jpg">` ;
 })
 
 thum03.addEventListener('click', function(){
-    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="/Images/image-product-3.jpg"></img>` ;
+    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="https://zabella-12.github.io/ecommerce-product-page/images/image-product-3.jpg">` ;
 })
 
 thum04.addEventListener('click', function(){
-    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="/Images/image-product-4.jpg"></img>` ;
+    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="https://zabella-12.github.io/ecommerce-product-page/images/image-product-4.jpg">` ;
 })
