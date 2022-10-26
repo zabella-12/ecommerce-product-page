@@ -89,7 +89,7 @@ let thum04 = document.getElementById('thumb4')
 let fullImg = document.getElementById('bigImg')
 
 thum01.addEventListener('click', function(){
-    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="/Images/image-product-1.jpg"></img>` ;
+    fullImg.innerHTML = `<img class=" w-75 formas-das-bordas"  src="https://zabella-12.github.io/ecommerce-product-page/images/image-product-1.jpg"></img>` ;
 })
 
 thum02.addEventListener('click', function(){
