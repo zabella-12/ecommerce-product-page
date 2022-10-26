@@ -35,6 +35,7 @@
 }
 
 .attribution { 
+    margin-top: 20px;
     font-size: 11px; 
     text-align: center; 
 }
@@ -119,12 +120,14 @@
 
 .desk {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-items: center;
     gap: 20px;
 }
 
-
+.desk button:nth-child(2) {
+    padding: 16px 20px !important;
+}
 
 .desk:hover {
     cursor: pointer;
@@ -145,5 +148,7 @@ nav ul li {
 .product {
     display: none;
 }
+
+
 
 }
